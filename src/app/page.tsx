@@ -78,6 +78,8 @@ export default function App() {
           </h1>
           <p className="text-lg md:text-xl text-teal-400">
             Seu guia completo para criar memecoins, tokens e NFTs de sucesso.
+            <meta name="google-site-verification" content="google5f9e06964b4e3008" />
+
           </p>
         </header>
 
