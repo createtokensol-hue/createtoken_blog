@@ -19,9 +19,17 @@ const UsersIcon = () => (
   </svg>
 );
 
+// --- Type Definition for a Blog Post ---
+type Post = {
+  id: number;
+  title: string;
+  summary: string;
+  link: string;
+};
+
 // Main App Component: The Blog Page
 export default function App() {
-  const blogPosts = [
+  const blogPosts: Post[] = [
     {
       id: 1,
       title: "Como Criar uma Memecoin de Sucesso em 2025",
@@ -96,7 +104,7 @@ export default function App() {
 }
 
 // BlogPost Component
-function BlogPost({ post }) {
+function BlogPost({ post }: { post: Post }) {
   return (
     <article className="bg-gray-800 rounded-lg shadow-xl p-6 flex flex-col justify-between hover:scale-105 transition-transform duration-300">
       <div>
